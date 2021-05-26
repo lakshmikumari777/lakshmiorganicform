@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<style>
+  .bg-light {
+    float: right !important;
+  }
+
+  html {
+    box-sizing: border-box
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit
+  }
+
+  body {
+    font-family: "Times New Roman", Georgia, Serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display";
+    letter-spacing: 5px;
+  }
+
+  .topnav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+  }
+
+  .bar {
+    white-space: normal;
+  }
+
+  .bar .bar-item {
+    padding: 5px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: burlywood;
+  }
+
+  .org-padding {
+    padding: 33px 16px !important;
+  }
+
+  .org-white {
+    color: #000 !important;
+    background-color: #fff !important;
+  }
+
+  .org-right {
+    float: right !important;
+  }
+
+  .org-display-container {
+    position: relative;
+    letter-spacing: 4px;
+  }
+
+  .org-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .org-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .org-display-bottomleft {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .org-padding-large {
+    padding: 12px 24px !important;
+  }
+
+  .org-col.m6 {
+    width: 49.99999% !important;
+    float: left;
+  }
+
+  .org-col.l6 {
+    width: 49.99999%;
+    float: left;
+  }
+
+  .org-center {
+    text-align: center !important;
+  }
+
+  .org-large {
+    font-size: 20px !important;
+  }
+
+  .org-row {
+    padding: 0 8px
+  }
+
+  .org-row:after,
+  .org-row:before,
+  org-row-padding:after,
+  .org-row-padding:before {
+    content: "";
+    display: table;
+    clear: both
+  }
+
+  .org-padding-64 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+    color: indigo;
+  }
+
+  .org-padding-32 {
+    padding-top: 32px !important;
+    padding-bottom: 32px !important
+  }
+
+  .org-light-grey {
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+</style>
+<header>
+  <nav>
+    <div class="row">
+      <div class="col">
+        <h3>Organic form</h3>
+      </div>
+      <div class="col">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+            aria-controls="nav-home" aria-selected="true">Home</a>
+          <a class="nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab"
+            aria-controls="nav-about" aria-selected="false">About</a>
+          <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab"
+            aria-controls="nav-contact" aria-selected="true">Contact</a>
+          <a class="nav-link" id="nav-video-tab" data-toggle="tab" href="#nav-video" role="tab"
+            aria-controls="nav-video" aria-selected="false">Videos</a>
+          <a class="nav-link" id="nav-gallery-tab" data-toggle="tab" href="#nav-gallery" role="tab"
+            aria-controls="nav-gallery" aria-selected="false">Gallery</a>
+          <a class="nav-link" id="nav-feedback-tab" data-toggle="tab" href="#nav-feedback" role="tab"
+            aria-controls="nav-feedback" aria-selected="true">Feedback</a>
+          <a class="nav-link" id="nav-signout-tab" data-toggle="tab" href="#nav-signout" role="tab"
+            aria-controls="nav-signout" aria-selected="false">Signout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<body style="padding-left: 17px;">
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+      <header class="org-display-container org-content org-wide" style="max-width:1330px;min-width:700px" id="nav-home">
+        <img src="https://cdn.pixabay.com/photo/2017/08/01/14/39/green-2565925__340.jpg" alt="orgfarm"
+          width="1600" height="800">
+        <div class="org-display-bottomleft org-padding-large ">
+        </div>
+      </header>
+      <div class="org-row org-padding-64" id="home">
+        <div class="org-col m6 org-padding-large">
+          <img src="https://cdn.pixabay.com/photo/2014/08/06/15/34/mushroom-411732__340.jpg"
+            class="org-image" alt="orgimg" width="600" height="750">
+        </div>
+  
+        <div class="org-col m6 org-padding-large">
+          <h1 class="org-center" onmouseover="this.style.cursor='crosshair'">History Of Organic Form</h1>
+          <h5 class="org-center" style="color: rgb(50, 130, 205);font-size: 23PX;">organic farming" was coined by Lord
+            Northbourne in 1940.</h5>
+          <p class="org-large" style="color:darkred;" onmouseover="this.style.cursor='crosshair'">An organic movement began in the<mark>1940</mark>s as a reaction to agriculture's growing reliance on synthetic fertilizers and pesticides. The history of this modern revival of organic farming dates back to the first half of the <mark>20th century</mark> at a time when there was a growing reliance on these new synthetic,non-organic methods.Organic farming was practiced in India since thousands of years.The great Indian civilization thrived on organic farming and was one of the most prosperous countries in the world, till the British ruled it.The cow, not only provided milk, but also provided bullocks for farming and dung which was used as fertilizers.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+      <div class="org-row org-padding-64" id="nav-about">
+        <div class="org-col l6 org-padding-large">
+          <h1 class="org-center">About</h1>
+          <p class="org-large" style="color:black;" onmouseover="this.style.cursor='crosshair'">Organic
+            farming is a form of agriculture that relies on techniques such as crop rotation, green manure,<mark>compost
+            and biological pest</mark> control.Organic describes things that are natural or related to nature. In
+            common usage, organic is used to mean <mark>“healthful”</mark> or <mark>“close to nature.”</mark> It can
+            also describe foods grown without <mark>artificial pesticides</mark> or fertilizers. In other uses, organic
+            refers to living things or material that comes from <mark>living things</mark>.Organic production and
+            marketing have grown at a fast pace. <mark>Historians consider</mark> Albert Howard, Viscount Lymington,
+            Robert McCarrison, Edgar J. Saxon and Frank Newman Turner as pioneers of the organic movement in Britain,
+            and the term <mark> "organic farming"</mark> was coined by Lord Northbourne in 1940.</p>
+        </div>
+
+        <div class="org-col l6 org-padding-large">
+          <img src="https://media.istockphoto.com/photos/fresh-fruits-and-vegetables-picture-id589415708?k=6&m=589415708&s=612x612&w=0&h=yk6a8hZI3HnGuPgCkJqWjqzmfbGqy9bucx1ZUXkXwA8="
+            class="org-image" alt="orgimg" style="width:100%">
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+      <div class="org-padding-64" id="contact"
+      style="background-image: url('https://cdn.pixabay.com/photo/2016/08/10/20/32/pen-1584240__340.jpg');background-repeat: no-repeat;background-size: 100%;">
+        <h1 style="color: brown;">Contact</h1><br>
+
+        <p style="font-size: 20px;font-family: Georgia, 'Times New Roman', Times, serif;">If any one have doubts on
+          organic form you can contact us.</p>
+        <p style="font-size: 20px;">You can also contact us by phone <mark>9999999999</mark> <br><br>
+          email:<mark>lakshmi1katteboina.com</mark><br><br>
+          you can send us a message here:</p>
+        <form action="home.html" target="_blank">
+          <p><input style="font-size: 20px;" type="text" placeholder="Name" name="Name"></p>
+          <p><input style="font-size: 20px;" type="number" placeholder="Rating" name="Rating"></p>
+          <p><input style="font-size: 20px;" type="text" placeholder="Message \ Special requirements" name="Message">
+          </p>
+          <p><input style="font-size: 20px;" type="date" placeholder="Date" name="dd" value=""></p>
+          <p><button style="font-size: 20px;color: hotpink;" type="submit">SEND MESSAGE</button></p>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab">
+      <div class="org-padding-64" id="videos">
+        <h2>Videos</h2>
+        <video width="1000" controls>
+          <source src="./images/video1.mp4" type="video/mp4">
+        </video>
+        <video width="400" controls>
+          <source src="./images/video2.webm" type="video/webm">
+        </video>
+        <video width="400" controls>
+          <source src="./images/video3.webm" type="video/webm">
+        </video>
+        <video width="400" controls>
+          <source src="./images/video4.webm" type="video/webm">
+        </video>
+        <video width="400" controls>
+          <source src="./images/video5.mp4" type="video/mp4">
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="nav-gallery" role="tabpanel" aria-labelledby="nav-gallery-tab">
+      <div id="gallery" class="org-padding-64" style="padding-bottom: 250px !important;">
+        <h2>Gallery</h2>
+        <div class="gallery">
+          <a target="_blank" href="./images/img1.jpg">
+            <img src="./images/img1.jpg" alt="orgimg" width="600" height="400">
+          </a>
+          <div class="desc">Organic form defined as an integrated farming system</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_blank" href="./images/img2.jpg">
+            <img src="./images/img2.jpg" alt="orgimg" width="600" height="400">
+          </a>
+          <div class="desc"> Organic farming is good for healthy food</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_blank" href="./images/img3.jpg">
+            <img src="./images/img3.jpg" alt="orgimg" width="600" height="400">
+          </a>
+          <div class="desc"> Organic farming is a production system</div>
+        </div>
+  
+        <div class="gallery">
+          <a target="_blank" href="./images/img4.jpg">
+            <img src="./images/img4.jpg" alt="orgimg" width="600" height="400">
+          </a>
+          <div class="desc">Organic form is natural method.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-pane fade" id="nav-feedback" role="tabpanel" aria-labelledby="nav-feedback-tab">
+      <div class="org-padding-64" id="feedback" class="org-padding-64"
+      style="background-image: url('https://cdn.pixabay.com/photo/2018/09/20/06/51/thank-you-3690115__340.jpg');background-repeat: no-repeat;background-size: 100%;">
+      <h1 style="color: aqua;">FEEDBACK FORM</h1>
+      <form name="form1" action="thkfeed.html">
+        <table border="0" style="color: gold;">
+          <tr>
+            <td style="font-size: 20px;">Enter Your Name:</td>
+            <td><input type="text" name="sname" placeholder="Enter Your Name"></td>
+          </tr>
+          <tr>
+            <td style="font-size: 20px;">Positive Feedback:</td>
+            <td><textarea rows="5" cols="50" name="address2"></textarea></td>
+          </tr>
+          <tr>
+            <td style="font-size: 20px;">Negative Feedback:</td>
+            <td><textarea rows="5" cols="50" name="address2"></textarea></td>
+          </tr>
+          <tr>
+            <td style="font-size: 20px;">Rating Of This Site:<br><br>
+              <input type="radio" name="g">Very Good<br>
+              <input type="radio" name="g">Good<br>
+              <input type="radio" name="g">Average<br>
+              <input type="radio" name="g">Poor<br>
+            </td><br><br>
+          <tr>
+            <td style="font-size: 20px;">Country:<br>
+              <input type="radio" name="g">INDIA<br>
+              <input type="radio" name="g">USA<br>
+              <input type="radio" name="g">KOREA<br>
+              <input type="radio" name="g">OTHERS<br>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="reset" value="Reset" </td>
+          </tr>
+          <tr>
+            <td><input type="submit" name="submit"></td>
+          </tr>
+
+        </table>
+      </form>
+    </div>
+    </div>
+  </div>
+
+  <!-- <footer class="org-center org-light-grey org-padding-32">
+    <p>
+      <marquee style="font-size: 25px; color:brown;">Organic describes things that are natural</marquee>
+    </p>
+  </footer> -->
+ <footer class="container">
+      <p>&copy; Organic forming is good for good health</p>
+    </footer>
+</body>
+
+</html>
